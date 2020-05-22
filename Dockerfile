@@ -8,6 +8,8 @@ LABEL maintainer="sma11black <smallblack@outlook.com>"
 RUN apk add --no-cache git
 RUN apk add --no-cache openssh
 RUN apk add --no-cache curl
+RUN apk add --no-cache tar
+RUN apk add --no-cache gzip
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
